@@ -52,3 +52,20 @@ button {
 button:hover {
     background-color: #e0e0e0;
 }
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #28a745;
+}
