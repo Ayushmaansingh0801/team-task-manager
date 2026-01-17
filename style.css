@@ -25,3 +25,30 @@ h1 {
     margin-bottom: 30px;
     font-weight: 600;
 }
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 65%;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
