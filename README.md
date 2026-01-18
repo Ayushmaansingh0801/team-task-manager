@@ -1,6 +1,3 @@
-# team-task-manager
-
-Simple collaborative task manager web app
 # Team Task Manager
 
 Simple collaborative task manager web app using HTML, CSS, and JavaScript.
