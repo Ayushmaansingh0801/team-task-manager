@@ -1,4 +1,4 @@
-// 1. Elements ko select karein
+// 1. HTML elements ko select karein
 const taskInput = document.getElementById('taskInput');
 const addBtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
@@ -14,7 +14,7 @@ function addTask() {
 
     const li = document.createElement('li');
 
-    // Yahan humne do alag buttons rakhe hain
+    // Dhyan dein: Yahan backticks ( ` ) ka use hua hai
     li.innerHTML = `
         <span class="task-text">${taskValue}</span>
         <div class="actions">
@@ -32,14 +32,11 @@ addBtn.addEventListener('click', addTask);
 
 // 4. Complete aur Delete ka Logic
 taskList.addEventListener('click', (e) => {
-    // COMPLETE (CHECK) LOGIC
+    // Complete logic
     if (e.target.classList.contains('complete-btn')) {
         const span = e.target.closest('li').querySelector('.task-text');
+        span.classList.toggle('completed');
         
-        // Isse text par line aa jayegi (Vanshika ko CSS mein .completed class banani hogi)
-        span.classList.toggle('completed'); 
-        
-        // Button ka text badalne ke liye
         if (span.classList.contains('completed')) {
             e.target.innerText = "Undo";
         } else {
@@ -47,7 +44,7 @@ taskList.addEventListener('click', (e) => {
         }
     }
 
-    // DELETE LOGIC
+    // Delete logic
     if (e.target.classList.contains('delete-btn')) {
         e.target.closest('li').remove();
     }
